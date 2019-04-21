@@ -1,5 +1,6 @@
 package ali.naseem.unmatched;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-
+        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(android.R.color.white));
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
