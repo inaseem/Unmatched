@@ -39,11 +39,10 @@
                 android:text="@string/subjects" />
 
             <LinearLayout
-                android:layout_marginTop="4dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:gravity="top"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <TextView
@@ -57,13 +56,14 @@
                     android:id="@+id/progressBar"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_weight="1"
+                    android:progressDrawable="@drawable/progress_drawable"
                     android:indeterminate="false"
                     android:max="100"
-                    android:progress="90"
+                    android:progress="80"
                     android:progressTint="@color/colorPrimary"
                     android:secondaryProgress="100" />
 

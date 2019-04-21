@@ -35,7 +35,7 @@ public class SubjectsAdapter extends RecyclerView.Adapter<SubjectsAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, int i) {
         Subject subject=subjects.get(i);
         holder.name.setText(subject.getName());
-        holder.percentage.setText(String.format(Locale.getDefault(),"%%%d",subject.getProgress()));
+        holder.percentage.setText(String.format(Locale.getDefault(),"%d%%",subject.getProgress()));
         holder.progressBar.setProgress(subject.getProgress());
     }
 
