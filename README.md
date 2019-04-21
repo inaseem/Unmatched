@@ -1,7 +1,7 @@
 # Unmatached
 
-<img src="https://raw.githubusercontent.com/naseemali925/SnakeAndLadderFX/master/screens/main.jpg" width="300">&nbsp;&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/naseemali925/SnakeAndLadderFX/master/screens/next.jpg">
+<img src="https://raw.githubusercontent.com/naseemali925/Unmatched/master/screens/main.jpg" width="300">&nbsp;&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/naseemali925/Unmatched/master/screens/next.jpg">
  
 **Technologies Used**
 <ul>
