@@ -55,7 +55,7 @@ public class HomeFragment extends Fragment {
         subjects.add(new Subject("Mental Ability",0,"Some Path"));
         subjects.add(new Subject("Physics",100,"Some Path"));
         subjects.add(new Subject("Chemistry",90,"Some Path"));
-        subjects.add(new Subject("Mathematics",80,"Some Path"));
+        subjects.add(new Subject("Mathematics",50,"Some Path"));
         subjects.add(new Subject("Biology",10,"Some Path"));
         subjects.add(new Subject("English",19,"Some Path"));
         SubjectsAdapter subjectsAdapter = new SubjectsAdapter(getContext(), subjects);
