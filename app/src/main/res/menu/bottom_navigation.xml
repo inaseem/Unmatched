@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/item_home"
-        android:title="Home"
-        android:icon="@drawable/ic_menu_camera"/>
-    <item android:id="@+id/item_tests"
-        android:title="Tests"
-        android:icon="@drawable/ic_menu_manage"/>
-    <item android:id="@+id/item_analysis"
-        android:title="Analysis"
-        android:icon="@drawable/ic_menu_send"/>
-    <item android:id="@+id/item_doubts"
-        android:title="Doubts"
-        android:icon="@drawable/ic_menu_share"/>
-    <item android:id="@+id/item_profiel"
-        android:title="Profile"
-        android:icon="@drawable/ic_menu_slideshow"/>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_home"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="Home" />
+    <item
+        android:id="@+id/item_tests"
+        android:icon="@drawable/ic_content_paste_black_24dp"
+        android:title="Tests" />
+    <item
+        android:id="@+id/item_analysis"
+        android:icon="@drawable/ic_timeline_black_24dp"
+        android:title="Analysis" />
+    <item
+        android:id="@+id/item_doubts"
+        android:icon="@drawable/ic_forum_black_24dp"
+        android:title="Doubts" />
+    <item
+        android:id="@+id/item_profiel"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Profile" />
 
 </menu>
