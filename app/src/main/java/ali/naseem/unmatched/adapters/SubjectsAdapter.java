@@ -1,11 +1,24 @@
 package ali.naseem.unmatched.adapters;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
+import ali.naseem.unmatched.models.Subject;
+
 public class SubjectsAdapter extends RecyclerView.Adapter<SubjectsAdapter.ViewHolder> {
+
+    private Context context;
+    private ArrayList<Subject> subjects;
+
+    public SubjectsAdapter(Context context, ArrayList<Subject> subjects) {
+        this.context = context;
+        this.subjects = subjects;
+    }
 
     @NonNull
     @Override
@@ -20,7 +33,7 @@ public class SubjectsAdapter extends RecyclerView.Adapter<SubjectsAdapter.ViewHo
 
     @Override
     public int getItemCount() {
-        return 0;
+        return subjects.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
