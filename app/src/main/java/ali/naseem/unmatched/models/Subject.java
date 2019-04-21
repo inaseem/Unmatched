@@ -5,6 +5,12 @@ public class Subject {
     private int progress;
     private String icon;
 
+    public Subject(String name, int progress, String icon) {
+        this.name = name;
+        this.progress = progress;
+        this.icon = icon;
+    }
+
     public String getName() {
         return name;
     }
