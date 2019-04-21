@@ -1,14 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBack"
     tools:context=".fragments.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/banner" />
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/contentPadding"
+            app:cardCornerRadius="5dp"
+            app:contentPadding="@dimen/contentPadding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:contentDescription="@string/banner"
+                        android:scaleType="fitXY"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:src="@drawable/ic_menu_camera" />
+
+                    <TextView
+                        android:id="@+id/warning"
+                        android:fontFamily="@font/affogato_medium"
+                        android:layout_marginLeft="@dimen/contentPadding"
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_marginRight="@dimen/contentPadding"
+                    android:layout_marginLeft="@dimen/contentPadding"
+                    android:layout_marginTop="@dimen/contentPadding"
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/upgrade_button"
+                    android:fontFamily="@font/affogato_bold"
+                    android:text="@string/upgrade"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>
